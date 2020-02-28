@@ -1,15 +1,14 @@
-import { Component, OnInit } from "@angular/core";
-import { Book } from "./shared/book.model";
-import { Search } from "./shared/search.model";
-import { BookService } from "./services/book.service";
+import { Component, OnInit } from '@angular/core';
+import { Book } from "../shared/book.model";
+import { Search } from "../shared/search.model";
+import { BookService } from "../services/book.service";
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  selector: 'app-books',
+  templateUrl: './books.component.html',
+  styleUrls: ['./books.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = "ng-goodreads";
+export class BooksComponent implements OnInit {
   searchTitle: string = "";
   books: Book[] = [];
 
@@ -49,3 +48,7 @@ export class AppComponent implements OnInit {
   }
 
 }
+
+
+
+
